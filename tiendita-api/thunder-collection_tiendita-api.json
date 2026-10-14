@@ -1,0 +1,115 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "Tiendita API - OCI",
+  "collectionId": "7ed06741-3852-4527-9648-bdbd4fddc9da",
+  "dateExported": "2026-10-12T15:29:24.000Z",
+  "version": "1.2",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "abfb663b-0d99-467c-b8a3-54d3b8e335bf",
+      "colId": "7ed06741-3852-4527-9648-bdbd4fddc9da",
+      "containerId": "",
+      "name": "1. GET lista completa",
+      "url": "{{baseUrl}}/api/v1/productos",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-10-12T15:29:24.000Z",
+      "modified": "2026-10-12T15:29:24.000Z",
+      "headers": [],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "none",
+        "raw": "",
+        "form": []
+      }
+    },
+    {
+      "_id": "1b0886c9-54d2-4012-8012-f01f37fa04f5",
+      "colId": "7ed06741-3852-4527-9648-bdbd4fddc9da",
+      "containerId": "",
+      "name": "2. GET por ID",
+      "url": "{{baseUrl}}/api/v1/productos/1",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-10-12T15:29:24.000Z",
+      "modified": "2026-10-12T15:29:24.000Z",
+      "headers": [],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "none",
+        "raw": "",
+        "form": []
+      }
+    },
+    {
+      "_id": "4407f105-7214-4f0f-a7c2-4be86a77a128",
+      "colId": "7ed06741-3852-4527-9648-bdbd4fddc9da",
+      "containerId": "",
+      "name": "3. POST crear",
+      "url": "{{baseUrl}}/api/v1/productos",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-10-12T15:29:24.000Z",
+      "modified": "2026-10-12T15:29:24.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Teclado Mecánico RGB\",\n  \"precio\": 85.5,\n  \"stock\": 20,\n  \"categoria\": \"Periféricos\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "f70b9cd5-cf9f-453b-acec-4f0a0cc0983c",
+      "colId": "7ed06741-3852-4527-9648-bdbd4fddc9da",
+      "containerId": "",
+      "name": "4. PUT actualizar",
+      "url": "{{baseUrl}}/api/v1/productos/1",
+      "method": "PUT",
+      "sortNum": 40000,
+      "created": "2026-10-12T15:29:24.000Z",
+      "modified": "2026-10-12T15:29:24.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Teclado Mecánico RGB Pro\",\n  \"precio\": 95.0,\n  \"stock\": 15,\n  \"categoria\": \"Periféricos Premium\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "9512bc9e-4554-4124-9622-3300d83b1c1d",
+      "colId": "7ed06741-3852-4527-9648-bdbd4fddc9da",
+      "containerId": "",
+      "name": "5. DELETE eliminar",
+      "url": "{{baseUrl}}/api/v1/productos/1",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2026-10-12T15:29:24.000Z",
+      "modified": "2026-10-12T15:29:24.000Z",
+      "headers": [],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "none",
+        "raw": "",
+        "form": []
+      }
+    }
+  ]
+}

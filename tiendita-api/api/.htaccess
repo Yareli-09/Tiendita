@@ -1,0 +1,7 @@
+# Envía todas las rutas (/api/v1/productos, /api/v1/productos/1, ...) a index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+# Que Apache no pierda el cuerpo JSON ni el header Authorization
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
